@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TP 1 Plataforma</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- inicio menu navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/losano.jpg.png" alt="logo" width="80" height="70">
+            MUSIKAXION</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a  class="nav-link active" aria-current="page" href="#tit">Evento</a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link active" aria-current="page" href="#subtit">Artistas Invitados</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active"  aria-current="page" href="#subtit1">Lugar y Fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  aria-current="page" href="#subtit2">Difunde tu Música</a>
+              </li>
+              <li class="nav-item">
+                <a id="buy" class="nav-link active" aria-current="page" href="#">Comprar Tickets</a>
+              </li>
+                
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <!--inicio image overlay... ver bien overlay en pag de bootstrap -->
+      <div class="card mb-2 text-bg-light">
+        <img src="imagenes/vinylfondo.jpg.jpg" widht= "100" height= "1000" class="card-img" alt="imagen de disco vinilo">
+        <div class="col-md-6 ms-auto card-img-overlay contentflex1">
+          
+            <h2 id="tit" class="card-title text-end">EVENTO</h2>
+            <p id="fuentes" class="card-text text-light text-end">En esta oportunidad MUSIKAXION ha convocado a tres Músicos de
+             gran talento y renombre internacional para dar una espectacular charla 
+            sobre su actividad artística y brindar una demostración musical 
+            única.No te lo pierdas, podrás llevarte una experiencia irrepetible </p>
+            
+              <div class="contentflex">
+            <button class="btn btn-outline-warning text-danger col-md-5">QUIERO DIFUNDIR MI MUSICA</button>
+            
+            <button class="btn btn-success text-dark col-md-5 me-0">COMPRAR TICKETS</button>
+              </div>
+        </div>
+      </div>
+      <!--inicio cards-->
+      <section class="container-fluid pt-5 bordes me-6">
+        <div class="text-center">
+          <h3 id="subtit">Artistas invitados esta jornada</h3>
+        </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="imagenes/directorAndreaVitello.jpg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge md-4 text-bg-warning">CLASICA</span>
+            <span class="badge md-4 text-bg-success">DIRECCION ORQUESTAL</span>
+            <span class="badge md-4 text-bg-danger">BEETHOVEN</span>
+            <h5 class="card-title">Andrea Vitello</h5>
+            <p class="card-text">Andrea Vitello es un director de orquesta Italiano con una larga trayectoria
+              y gran reconocimiento internacional
+            </p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="imagenes/drums.jpg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge md-4 text-bg-warning">IRISH FOLK</span>
+            <span class="badge md-4 text-bg-success">DRUMS</span>
+            <span class="badge md-4 text-bg-danger">MUSICA ETNICA</span>
+            <h5 class="card-title">Jonnhy Drummer</h5>
+            <p class="card-text">Jonnhy Drummer es un conocido baterista irlandes de musica folk que ha 
+              formado parte de muchos proyectos musicales muy interesantes en relación al patrimonio cultural 
+              irlandes
+            </p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="imagenes/musicoCallejero.jpg.jpg" class="card-img-top" alt="...">
+          
+          
+          <div class="card-body">
+            <span class="badge md-4 text-bg-warning">JAZZ</span>
+            <span class="badge md-4 text-bg-success">FUSION</span>
+            <span class="badge md-4 text-bg-danger">FOLCLORE CHILENO</span>
+            <h5 class="card-title">Juani Orozco</h5>
+            <p class="card-text">Juani Orozco es un guitarrista Chileno de jazz que esta comenzando una 
+              carrera con mucho futuro a nivel internacional
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!--another overlay/ trying to display two columns-->
+
+      <div class="container-fluid card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="imagenes/montañafondo.jpg.jpg" class="img-fluid rounded-start" alt="foto patagonia">
+          </div>
+          <div class="col-md-6 bg-secondary">
+            <div class="card-body">
+              <h3 class="card-title text-light" id="subtit1">Patagonia Argentina-Río Gallegos</h3>
+              <p class="card-text text-light" id="text1">Este evento tendra lugar el día 30/11/2023 a Las 18.00 hs en el Teatro Municipal
+                 Héctor Marinero de la ciudad de Río Gallegos, Santa Cruz, Argentina. La dirección del 
+                 Lugar es Av. José de San Martín 849, Río Gallegos, Santa Cruz
+                 Provincia de Santa Cruz.
+              </p>
+              <button class="btn btn-outline-dark text-light col-md-5">Conoce más</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--FORM-->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="text-center"><h3 id="subtit2">DIFUNDE TU MUSICA</h3>
+          <p>Anotate para participar en los eventos de MUSIKAXION como solista o con tu grupo</p>
+          </div>
+          <form class="row mb-3 mt-3" style="width: 100%;">
+            <div class="col-3"></div>
+            <div class="col-3"> 
+              <input type="name" class="form-control" id="nameinput" placeholder="nombre">
+            </div>
+            <div class="col-3">
+              <input type="name" class="form-control" id="surnameinput" placeholder="apellido">
+            </div>
+            <div class="col-3"></div>
+          </form>
+            <br>
+            <div class="form-control-plaintext mb-3">
+              
+              <center><textarea class="form-control" style="width: 40%" placeholder="DESCRIBE TU PROYECTO" id="floatingTextarea"></textarea>
+              </center>
+              
+              
+            </div>
+          <div class="text-center">
+            <button type=button class="btn btn-success" style="width: 40%;">enviar</button>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <!--aqui abajo footer con IUgradients y 7 columns-->
+<div class="container-fluid">
+  <div  id=footer class="row d-flex align-items-center text-light" style="height: 100px;">
+    <div class="col">Preguntas frecuentes</div>
+    <div class="col">Contáctanos</div>
+    <div class="col">Prensa</div>
+    <div class="col">Conferencias y conciertos</div>
+    <div class="col">Términos y condiciones</div>
+    <div class="col">Privacidad</div>
+    <div Class="col">Docentes y estudiantes</div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
